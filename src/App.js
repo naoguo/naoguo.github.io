@@ -1,6 +1,10 @@
 import logo from './logo.png';
 import './App.css';
 
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-WVGE68JT2Q');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 function App() {
   return (
     <div className="App">
