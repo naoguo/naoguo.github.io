@@ -1,9 +1,9 @@
 import logo from './logo.png';
 import './App.css';
 
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 ReactGA.initialize('G-WVGE68JT2Q');
-ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
 
 function App() {
   return (
